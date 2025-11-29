@@ -1,0 +1,19 @@
+###### Listar todas as tarefas
+GET http://localhost:5298/api/chamado/listar
+
+### Cadastrar uma nova tarefa
+POST http://localhost:5298/api/chamado/cadastrar
+Content-Type: application/json
+
+{
+    "descricao": "Trocar memórias"
+}
+
+### Alterar uma tarefa
+PATCH http://localhost:5298/api/chamado/alterar/8837647f-6c13-4cf6-b8ff-29632429c2da
+
+### Listagem de Chamados Não Resolvidos
+GET http://localhost:5298/api/chamado/naoresolvidos
+
+### Listagem de Chamados Resolvidos
+GET http://localhost:5298/api/chamado/resolvidos
